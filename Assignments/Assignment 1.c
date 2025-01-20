@@ -1,49 +1,48 @@
 #include <stdio.h>
 
-/*
-    Write a program that:
-
-        1. Asks user to enter the price of a bus ticket
-        2. Asks user to enter the price of a taxi trip
-        3. Asks user to enter how much money he/she has
-        4. If user has not enough money for either type tells user to walk and then the program stops
-        5. Asks user to choose taxi or bus (use numbers for selection)
-        6. Checks if user has enough money for the selected trip type
-
-                * If User has enough money reduce the money by the selected trip’s price and print
-                  how much money is left, and go back to step 4
-                * If user has not enough money for the selected trip type then tell that to user and go
-                  back to step 4
- */
+// Exercise 1 - Bus & Taxi price check *COMPLETED*
 
 int main(void)
 {
-  float bus_price;
+  float bus_ticket;
   float taxi_price;
-  float user_money;
+  float balance;
   int selection;
 
-  printf("What's the price of the bus ticket?\n");
-  scanf("%f", &bus_price);
-
-  printf("What's the price of the taxi?\n");
+  printf("Enter price of the bus ticket:\n");
+  scanf("%f", &bus_ticket);
+  printf("Enter price of the taxi:\n");
   scanf("%f", &taxi_price);
+  printf("How much money do you have?:\n");
+  scanf("%f", &balance);
+  printf("Your current balance is: %.2f\n", balance);
 
-  printf("How much money do you have?\n");
-  scanf("%f", &user_money);
+  while(balance >= bus_ticket || balance >= taxi_price) {
 
-  /* ADD WHILE LOOP
+    printf("Choose your preferred choice of transport (1-2):\n");
+    printf("1. Bus (%.2f)\n", bus_ticket);
+    printf("2. Taxi (%.2f)\n", taxi_price);
+    scanf("%d", &selection);
 
-  printf("Which transport option would you like?\n");
-  printf("1. Price of a bus ticket: (%f)\n",bus_price);
-  printf("2. Price of the taxi: (%f)\n", taxi_price);
-  scanf("%d", &selection);
+    if (selection == 1 && balance >= bus_ticket) {
+      balance -= bus_ticket;
+      printf("You chose the bus! Vroom vroom!\n");
+      printf("Your current balance is: %.2f\n", balance);
 
-  */
+    } else if (selection == 1 && balance <= bus_ticket) {
+      printf("You don't have enough money for a bus ticket...\n");
+      printf("Your current balance is: %.2f\n", balance);
 
+    } else if (selection == 2 && balance >= taxi_price) {
+      balance -= taxi_price;
+      printf("You chose the taxi! How fancy!\n");
+      printf("Your current balance is: %.2f\n", balance);
 
-
-
-
-
+    } else if (selection == 2 && balance <= taxi_price) {
+      printf("You don't have enough money for a taxi...\n");
+      printf("Your current balance is: %.2f\n", balance);
+    }
+  }
+  printf("Looks like you don't have enough money left! Well, walking is healthier anyways. :)");
+  return 0;
 }
