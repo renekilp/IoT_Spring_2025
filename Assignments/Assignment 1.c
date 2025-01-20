@@ -32,6 +32,24 @@ int main(void)
   printf("How much money do you have?\n");
   scanf("%f", &user_money);
 
+  while (user_money > 0) {
+    printf("Your current balance is:%f\n", user_money);
+    printf("Choose your option of transport (1 or 2):\n");
+    printf("1. Bus (%f\n", bus_price);
+    printf("2. Taxi (%f\n", taxi_price);
+    scanf("%d", &selection);
+    if (selection == 1) {
+      user_money -= bus_price;
+    }
+    else if (selection == 2) {
+      user_money -= taxi_price;
+    }
+    else {
+      printf("Invalid option, please try again.\n");
+    }
+  printf("You ran out of money!");
+  }
+
   /* ADD WHILE LOOP
 
   printf("Which transport option would you like?\n");
