@@ -17,7 +17,7 @@ int main(void)
   scanf("%f", &balance);
   printf("Your current balance is: %.2f\n", balance);
 
-  while(balance >= bus_ticket || balance >= taxi_price) {
+  while (balance >= bus_ticket || balance >= taxi_price) {
 
     printf("Choose your preferred choice of transport (1-2):\n");
     printf("1. Bus (%.2f)\n", bus_ticket);
