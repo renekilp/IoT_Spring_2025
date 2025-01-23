@@ -17,6 +17,7 @@ int main(void)
   scanf("%f", &balance);
   printf("Your current balance is: %.2f\n", balance);
 
+  // added both checks, if the user wants to be cheeky and make taxi more expensive than a bus ticket vvv
   while (balance >= bus_ticket || balance >= taxi_price) {
 
     printf("Choose your preferred choice of transport (1-2):\n");
@@ -24,6 +25,7 @@ int main(void)
     printf("2. Taxi (%.2f)\n", taxi_price);
     scanf("%d", &selection);
 
+    // VERY basic if-statement checking vvv
     if (selection == 1 && balance >= bus_ticket) {
       balance -= bus_ticket;
       printf("You chose the bus! Vroom vroom!\n");
@@ -43,6 +45,8 @@ int main(void)
       printf("Your current balance is: %.2f\n", balance);
     }
   }
+
   printf("Looks like you don't have enough money left! Well, walking is healthier anyways. :)");
+
   return 0;
 }

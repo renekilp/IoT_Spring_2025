@@ -163,6 +163,18 @@ build CMakeFiles/IoT_Spring_2025.dir/Notes/Statements/switchstatements.c.obj: C_
   OBJECT_DIR = CMakeFiles\IoT_Spring_2025.dir
   OBJECT_FILE_DIR = CMakeFiles\IoT_Spring_2025.dir\Notes\Statements
 
+build CMakeFiles/IoT_Spring_2025.dir/Assignments/Assignment_2.c.obj: C_COMPILER__IoT_Spring_2025_unscanned_Debug C$:/Users/renek/CLionProjects/IoT_Spring_2025/Assignments/Assignment$ 2.c || cmake_object_order_depends_target_IoT_Spring_2025
+  DEP_FILE = CMakeFiles\IoT_Spring_2025.dir\Assignments\Assignment_2.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\IoT_Spring_2025.dir
+  OBJECT_FILE_DIR = CMakeFiles\IoT_Spring_2025.dir\Assignments
+
+build CMakeFiles/IoT_Spring_2025.dir/Assignments/Assignment_3.c.obj: C_COMPILER__IoT_Spring_2025_unscanned_Debug C$:/Users/renek/CLionProjects/IoT_Spring_2025/Assignments/Assignment$ 3.c || cmake_object_order_depends_target_IoT_Spring_2025
+  DEP_FILE = CMakeFiles\IoT_Spring_2025.dir\Assignments\Assignment_3.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\IoT_Spring_2025.dir
+  OBJECT_FILE_DIR = CMakeFiles\IoT_Spring_2025.dir\Assignments
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target IoT_Spring_2025
@@ -171,7 +183,7 @@ build CMakeFiles/IoT_Spring_2025.dir/Notes/Statements/switchstatements.c.obj: C_
 #############################################
 # Link the executable IoT_Spring_2025.exe
 
-build IoT_Spring_2025.exe: C_EXECUTABLE_LINKER__IoT_Spring_2025_Debug CMakeFiles/IoT_Spring_2025.dir/main.c.obj CMakeFiles/IoT_Spring_2025.dir/Assignments/Assignment_1.c.obj CMakeFiles/IoT_Spring_2025.dir/Notes/Basics/datatypes.c.obj CMakeFiles/IoT_Spring_2025.dir/Notes/Basics/formatspecifiers.c.obj CMakeFiles/IoT_Spring_2025.dir/Notes/Basics/helloworld.c.obj CMakeFiles/IoT_Spring_2025.dir/Notes/Basics/variables.c.obj CMakeFiles/IoT_Spring_2025.dir/Notes/Functions/functions.c.obj CMakeFiles/IoT_Spring_2025.dir/Notes/Inputs/roomtempconv.c.obj CMakeFiles/IoT_Spring_2025.dir/Notes/Inputs/userinput.c.obj CMakeFiles/IoT_Spring_2025.dir/Notes/Math/arithmeticoperators.c.obj CMakeFiles/IoT_Spring_2025.dir/Notes/Math/augmentedarioperators.c.obj CMakeFiles/IoT_Spring_2025.dir/Notes/Math/calculatorprogram.c.obj CMakeFiles/IoT_Spring_2025.dir/Notes/Math/circlecircum.c.obj CMakeFiles/IoT_Spring_2025.dir/Notes/Math/constants.c.obj CMakeFiles/IoT_Spring_2025.dir/Notes/Math/hypotenusecalc.c.obj CMakeFiles/IoT_Spring_2025.dir/Notes/Math/mathfunctions.c.obj CMakeFiles/IoT_Spring_2025.dir/Notes/Statements/ifstatements.c.obj CMakeFiles/IoT_Spring_2025.dir/Notes/Statements/logicaloperators.c.obj CMakeFiles/IoT_Spring_2025.dir/Notes/Statements/switchstatements.c.obj
+build IoT_Spring_2025.exe: C_EXECUTABLE_LINKER__IoT_Spring_2025_Debug CMakeFiles/IoT_Spring_2025.dir/main.c.obj CMakeFiles/IoT_Spring_2025.dir/Assignments/Assignment_1.c.obj CMakeFiles/IoT_Spring_2025.dir/Notes/Basics/datatypes.c.obj CMakeFiles/IoT_Spring_2025.dir/Notes/Basics/formatspecifiers.c.obj CMakeFiles/IoT_Spring_2025.dir/Notes/Basics/helloworld.c.obj CMakeFiles/IoT_Spring_2025.dir/Notes/Basics/variables.c.obj CMakeFiles/IoT_Spring_2025.dir/Notes/Functions/functions.c.obj CMakeFiles/IoT_Spring_2025.dir/Notes/Inputs/roomtempconv.c.obj CMakeFiles/IoT_Spring_2025.dir/Notes/Inputs/userinput.c.obj CMakeFiles/IoT_Spring_2025.dir/Notes/Math/arithmeticoperators.c.obj CMakeFiles/IoT_Spring_2025.dir/Notes/Math/augmentedarioperators.c.obj CMakeFiles/IoT_Spring_2025.dir/Notes/Math/calculatorprogram.c.obj CMakeFiles/IoT_Spring_2025.dir/Notes/Math/circlecircum.c.obj CMakeFiles/IoT_Spring_2025.dir/Notes/Math/constants.c.obj CMakeFiles/IoT_Spring_2025.dir/Notes/Math/hypotenusecalc.c.obj CMakeFiles/IoT_Spring_2025.dir/Notes/Math/mathfunctions.c.obj CMakeFiles/IoT_Spring_2025.dir/Notes/Statements/ifstatements.c.obj CMakeFiles/IoT_Spring_2025.dir/Notes/Statements/logicaloperators.c.obj CMakeFiles/IoT_Spring_2025.dir/Notes/Statements/switchstatements.c.obj CMakeFiles/IoT_Spring_2025.dir/Assignments/Assignment_2.c.obj CMakeFiles/IoT_Spring_2025.dir/Assignments/Assignment_3.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\IoT_Spring_2025.dir
