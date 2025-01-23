@@ -67,9 +67,9 @@ int main(void)
 
             /* OUTPUT looks like this:
 
-               Student   Grade
-               x         x
-               x         N/A
+               Student      Grade
+               x            x
+               x            N/A
 
             */
         }
