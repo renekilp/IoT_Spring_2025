@@ -29,7 +29,7 @@ int main(){
     }
 
 
-    // logical operators =! (NOT) reverses the state of a condition
+    // logical operators = ! (NOT) reverses the state of a condition
 
     if(!sunny){
         printf("It's cloudy outside!\n");

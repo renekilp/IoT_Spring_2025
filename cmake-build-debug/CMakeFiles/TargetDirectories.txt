@@ -1,3 +1,0 @@
-C:/Users/renek/CLionProjects/IoT_Spring_2025/cmake-build-debug/CMakeFiles/IoT_Spring_2025.dir
-C:/Users/renek/CLionProjects/IoT_Spring_2025/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/renek/CLionProjects/IoT_Spring_2025/cmake-build-debug/CMakeFiles/rebuild_cache.dir

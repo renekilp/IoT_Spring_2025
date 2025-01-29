@@ -2,6 +2,7 @@
 
 // Exercise 4 - Interger checker + function
 
+
 int number;
 int numbers[];
 

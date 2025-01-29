@@ -10,7 +10,7 @@ int main(){
         %s = string (array of characters)
         %f = float
         %lf = double
-        %d = integer
+        %d = integer (decimal)
 
         %.1 = decimal precision
         %1 = minimun field width
