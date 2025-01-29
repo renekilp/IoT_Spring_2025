@@ -22,4 +22,6 @@ add_executable(IoT_Spring_2025 main.c
         Notes/Math/mathfunctions.c
         Notes/Statements/ifstatements.c
         Notes/Statements/logicaloperators.c
-        Notes/Statements/switchstatements.c)
+        Notes/Statements/switchstatements.c
+        "Assignments/Assignment 2.c"
+        "Assignments/Assignment 3.c")
