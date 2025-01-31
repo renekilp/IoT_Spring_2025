@@ -10,6 +10,7 @@ int read_integer(void)
   // trying out the "input validation" provided by the exercise material pdf vvv
   while (1) {
     printf("Enter positive numbers or negative to stop:\n");
+
     if (scanf("%d", &number) == 1) {
       return number;
     }
