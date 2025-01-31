@@ -10,7 +10,7 @@ int read_integer(int low, int high)
     printf("Enter your number (between %d and %d):\n", low, high);
 
     // error handling for invalid inputs vvv
-    if (scanf_s("%d", &number) != 1) {
+    if (scanf("%d", &number) != 1) {
       while (getchar() != '\n');
       printf("Invalid input! Please enter a valid number.\n");
       continue;
