@@ -13,8 +13,8 @@ int read_integer(void)
     if (scanf("%d", &number) == 1) {
       return number;
     }
-    printf("Invalid input. Please enter only positive numbers!\n");
     while (getchar() != '\n');
+    printf("Invalid input. Please enter only positive numbers!\n");
     // seems to be working fine :)
   }
 }
