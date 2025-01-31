@@ -7,7 +7,7 @@ int read_integer(void)
 
   int number;
 
-  // trying out the "input validation" provided by the exercise material pdf
+  // trying out the "input validation" provided by the exercise material pdf vvv
   while (1) {
     printf("Enter positive numbers or negative to stop:\n");
     if (scanf("%d", &number) == 1) {
@@ -42,7 +42,7 @@ int main(void)
     count++;
   }
 
-  // final calculations for the average
+  // final calculations for the average vvv
   if (count > 0) {
     average = (float)total / count;
     printf("You entered %d positive numbers.\n", count);
