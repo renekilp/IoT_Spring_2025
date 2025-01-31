@@ -23,10 +23,9 @@ int read_integer(void)
 int main(void)
 {
 
-  /*
-      'count' keeps track of the positive numbers entered
-      'total' keeps track of the sum of the entered numbers (unless it's a negative which breaks the loop)
-  */
+  /*  'count' keeps track of the positive numbers entered
+      'total' keeps track of the sum of the entered numbers
+      (unless it's a negative which breaks the loop)         */
 
   int count = 0;
   int total = 0;
