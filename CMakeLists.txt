@@ -26,4 +26,7 @@ add_executable(IoT_Spring_2025 main.c
         "Assignments/Assignment 2.c"
         "Assignments/Assignment 3.c"
         "Assignments/Assignment 4.c"
-        Notes/Pointers/pointers.c)
+        Notes/Pointers/pointers.c
+        "Assignments/Assignment 7.c"
+        "Assignments/Assignment 8.c"
+        "Assignments/Assignment 9.c")
