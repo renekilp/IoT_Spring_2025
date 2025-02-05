@@ -1,20 +1,22 @@
 #include <stdio.h>
 
-// 7 # lecture materials vvv *ENABLE* terminal output in settings!
+#define MAX 25
 
-int main(){
+int main(void)
+{
 
-    char name[25];  // bytes
+    char name[MAX];
     int age;
 
     printf("What's your name?\n");
+
     //scanf("%s", name);    // < can't read empty spaces (for example Firstname Lastname)
-    fgets(name, 25, stdin);
+    fgets(name, MAX, stdin);
 
     printf("How old are you?\n");
     scanf("%d", &age);
 
-    printf("Hello, %s! What's up?\n", name);
+    printf("Hello, %s", name);
     printf("You are %d years old\n", age);
     
     return 0;
