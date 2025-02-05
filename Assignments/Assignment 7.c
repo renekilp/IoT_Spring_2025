@@ -1,39 +1,40 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-// Exercise 7 - "Guessing" game
+#define MAX_TRIES 3
 
-#define ROUNDS 3
-
-bool read_positive (int *value)
-{
-  printf("Please enter a postive number:\n");
-
-  if (scanf("%d", value) != 1) {
-    while (getchar() != '\n');
-    printf("Invalid input. Please try again!\n");
-    return false;
-  }
-  if (*value <= 0) {
-    printf("Please enter only positive numbers.\n");
-    return false;
-  }
-  return true;
-}
-
-int main(void)
-{
-  int value;
-  int round_count = 0;
-
-  while (round_count < ROUNDS) {
-    printf("Guess how much money I have! :)\n");
-    if (read_positive(&value)) {
-      int cheat_value = (value * 2) + 20;
-      printf("That's too bad! I have: %d euros. xD\n", cheat_value);
-      round_count++;
+bool read_positive(int *value) {
+    printf("Enter a positive number: ");
+    
+    if (scanf("%d", value) != 1) {
+        while (getchar() != '\n'); 
+        printf("Incorrect input\n");
+        return false;
     }
-  }
-  printf("I give up. See you next time!\n");
+
+    if (*value <= 0) {
+        printf("Incorrect input\n");
+        return false;
+    }
+
+    return true;
 }
 
+int main(void) {
+    int value;
+    int attempts = 0;
+
+    while (attempts < MAX_TRIES) {
+        printf("Guess how much money I have!\n");
+
+        if (read_positive(&value)) {
+            int actual_money = (value * 2) + 20;
+            printf("You didn’t get it right. I have %d euros.\n", actual_money);
+        } else {
+            attempts++; 
+        }
+    }
+
+    printf("I give up! See you later!\n");
+    return 0;
+}
