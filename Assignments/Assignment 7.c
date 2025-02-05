@@ -1,19 +1,22 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-#define MAX_TRIES 3
+// Exercise 7 - Money guessing *COMPLETED*
+
+#define INVALID_ATTEMPTS 3
 
 bool read_positive(int *value) {
-    printf("Enter a positive number: ");
-    
+    printf("Enter a positive number:\n");
+
+    // error handling vvv (same old)
     if (scanf("%d", value) != 1) {
         while (getchar() != '\n'); 
-        printf("Incorrect input\n");
+        printf("Invalid input. Try again!\n");
         return false;
     }
 
     if (*value <= 0) {
-        printf("Incorrect input\n");
+        printf("Invalid input. Try again!\n");
         return false;
     }
 
@@ -24,17 +27,22 @@ int main(void) {
     int value;
     int attempts = 0;
 
-    while (attempts < MAX_TRIES) {
+    /* compares the attempts to set invalid amount (3 in this case) vvv
+       and only increases the attempts if 'false' is returned */
+
+    while (attempts < INVALID_ATTEMPTS) {
         printf("Guess how much money I have!\n");
 
+        // cheating part if true is returned vvv
         if (read_positive(&value)) {
-            int actual_money = (value * 2) + 20;
-            printf("You didn’t get it right. I have %d euros.\n", actual_money);
+            int cheat_money = (value * 2) + 20;
+            printf("Too bad. I have %d euros.\n", cheat_money);
         } else {
+            // increases the attempts by one
             attempts++; 
         }
     }
 
-    printf("I give up! See you later!\n");
+    printf("I give up! Let's play again some other time! :)\n");
     return 0;
 }
