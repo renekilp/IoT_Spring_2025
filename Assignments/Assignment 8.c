@@ -25,7 +25,8 @@ int main(void) {
     srand(time(NULL));
 
     /* this fills the array with randomized numbers
-       between 1 - 100 vvv  */
+       the min and max numbers weren't specified in the instructions,
+       so I chose numbers between 1 - 100  vvv  */
     for (int i = 0; i < COUNT_SIZE; i++) {
         numbers[i] = rand() % 100 + 1;
     }
