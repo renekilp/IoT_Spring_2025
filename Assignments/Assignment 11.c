@@ -54,11 +54,11 @@ int main(void)
 
   // for the output vvv
   if (count > 0) {
-    printf("Modified string: %s\n", input);
-    printf("Characters replaced: %d\n", count);
+    printf("Here's the modified string: %s\n", input);
+    printf("The amount of characters replaced: %d\n", count);
 
   } else {
-    printf("String was not modified\n");
+    printf("Your string was not modified\n");
   }
 
   return 0;
