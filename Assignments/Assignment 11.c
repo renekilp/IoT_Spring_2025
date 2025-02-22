@@ -4,6 +4,9 @@
 // Exercise 11 - input string modification *COMPLETED*
 // this one was actually really tricky...
 
+#define MAX_LENGTH 50
+// didn't bother adding #define value for modified since it will always be two characters long
+
 int replace_char(char *str, const char *modified) {
   int count = 0;
 
@@ -29,7 +32,7 @@ int replace_char(char *str, const char *modified) {
 
 int main(void)
 {
-  char input[50];
+  char input[MAX_LENGTH];
   char modified[3];
 
   printf("Please enter a string (max 50 characters):\n");
