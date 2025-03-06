@@ -1,7 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <ctype.h>
-#include <string.h>
 
 // Exercise 14 - read file text (write content -> uppercase) *COMPLETED*
 

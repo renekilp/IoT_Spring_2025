@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 // Exercise 13 - read file number (min, max, count) *COMPLETED*
 
