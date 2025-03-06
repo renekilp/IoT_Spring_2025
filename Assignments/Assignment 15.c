@@ -67,7 +67,7 @@ int main(void)
     }
     /*  OUTPUT looks like this:
 
-        23.50 Mega double burger with bacon and cheese
+       23.50 Mega double burger with bacon and cheese
         5.60 Belgian style fries with vegan mayo
         5.30 Chicken nuggets with vegan mayo
         4.40 Chocolate ice cream with vanilla swirl
