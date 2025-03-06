@@ -21,8 +21,11 @@ int main(void)
 
     printf("Enter the name of your file:\n");
     // if there is an error with the file name input vvv
-    // at most 99 characters are read, leaving space for the null terminator ('\0') vvv
-    if (scanf("%99s", filename) != 1) {
+
+    /* at most 19 characters are read, leaving space for the null terminator ('\0') vvv
+       (I had to "hardcode" the 19 character value since couldn't find a way to use the
+       FILE_NAME_SIZE with the 'scanf' function) */
+    if (scanf("%19s", filename) != 1) {
         fprintf(stderr, "There seems to be an issue with the filename.\n");
         return 1;
     }
