@@ -20,16 +20,17 @@ int main(void)
     int count = 0;
 
     printf("Enter the name of your file:\n");
+    // if there is an error with the file name input vvv
     // at most 99 characters are read, leaving space for the null terminator ('\0') vvv
     if (scanf("%99s", filename) != 1) {
-        fprintf(stderr, "Error reading filename.\n");
+        fprintf(stderr, "There seems to be an issue with the filename.\n");
         return 1;
     }
 
     file = fopen(filename, "r");
     // if can't find the file vvv
     if (file == NULL) {
-        fprintf(stderr, "Error: Cannot open file '%s'\n", filename);
+        fprintf(stderr, "Cannot open the file: %s! Maybe it's missing. :(\n", filename);
         return 1;
     }
 
