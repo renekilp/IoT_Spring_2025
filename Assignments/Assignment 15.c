@@ -72,7 +72,6 @@ int main(void)
         5.30 Chicken nuggets with vegan mayo
         4.40 Chocolate ice cream with vanilla swirl
         0.99 Megaforce energy drink
-
     */
 
     return 0;
