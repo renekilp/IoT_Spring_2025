@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
+// Exercise 15 - read file text and print items *COMPLETED*
+
 #define FILE_NAME_SIZE 20
 #define MAX_ITEMS 40
 
