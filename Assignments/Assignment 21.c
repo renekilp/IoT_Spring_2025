@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
-//Exercise 21 - read file, GPS coords, check if bad or good [OK]/[FAIL] *COMPLETED*
+// Exercise 21 - read file, GPS coords, check if bad or good [OK]/[FAIL] *COMPLETED*
+// I created a file (test) with the 'GPS information' (including the items from the exercise description)
 
 #define FILE_NAME_SIZE 20
 #define LINE_SIZE 100
